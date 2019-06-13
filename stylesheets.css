@@ -1,0 +1,142 @@
+html , body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    margin: 0;
+}
+
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+
+    grid-template-rows: 1fr 7fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+
+    "header header pics"
+    "sidebar main pics"
+    "footer footer footer";
+
+    grid-gap: 3px;
+    background: #805315;
+
+}
+
+.header{
+    grid-area: header;
+    text-align: center;
+    color:#003A23;
+    background: #277455;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.link:hover{
+    border: #ffffff solid 1px;
+    transition: 1s;
+    color:#ffffff;
+}
+
+.link{
+    border: #489174 solid 1px;
+    text-align: center;
+    border-radius: 8px;
+    max-width: 1fr;
+    margin: 10px 0;
+    padding: 2vw;
+    color:#003A23;
+    
+}
+
+
+.main{
+    grid-area: main;
+    padding: 3%;
+    background: 	#AA7A39;
+    color: #553100;
+    overflow-y: auto;
+    height: 7fr; 
+    font-size: 2vh;
+}
+
+.footer{
+    grid-area: footer;
+    background: #FFDBAA;
+    text-align: center;
+    font-size: 12px;
+    color: #553100;
+}
+
+.sidebar{
+    padding:1vw;
+    grid-area: sidebar;
+    background: #277455;
+    text-align: center;
+}
+
+.pics{
+    grid-area: pics;
+    background: #FFDBAA;
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+ .imgs{
+    width:100%; 
+    height: auto;
+    margin: 0;
+     padding: 0;
+     position: static;
+     }
+
+
+
+.placeholder{
+    background: #FFDBAA;
+    color: #553100;   
+}
+
+.form , .thankyou{
+    text-align: center;
+}
+
+table , th , td {
+    border: #553100 1px solid;
+    margin: 0 auto;
+    
+}
+
+
+thead,tbody{
+    background-color: #FFDBAA;
+}
+
+.breedName{
+    width: 10%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.breedContent{
+    width: 45%;
+}
+
+
+
+.Morris{
+    height: 60%;
+    width: auto;
+    border-radius: 50%;
+}
